@@ -1,25 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
     <link rel="stylesheet" href="style.css">
-    <title>Agra Odyssey</title>
+    <style>
+        
+    </style>
 </head>
-<script src ="app.js"></script>
+
 <body>
-    <nav class="navbar">
-        <div class="logo">Agra Odessey</div>
-        <ul class="nav-links">
-          <li><a href="#destinations">Destinations</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#aboutus">About us</a></li>
-  
-          <li><a class="get-started" href="#get-started">Get Started</a></li>
-        </ul>
-      </nav>
-      
-      </div>
-    
+    <header>
+        <div class="container">
+            <div class="navbar">
+                <img src="/images/logo.jpg" class="logo" id="logo">
+                
+                <nav>
+                    <ul>
+                        <li><a href="">Destination</a></li>
+                        <li><a href="">About Us</a></li>
+                        <li><a href="">Get Started</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div class="content-wrapper">
+                <div class="content">
+                    <h1>Agra Odyssey</h1>
+                    <p>Welcome to Agra Odyssey – your go-to guide for exploring Agra's vibrant heritage and timeless beauty! Discover the iconic Taj Mahal, grand Agra Fort, hidden gems, and local tips that go beyond the ordinary. Plan your perfect trip effortlessly and dive into Agra’s rich history, art, and culture. Let the adventure begin!</p>
+                </div>
+                <div class="image-wrapper">
+                    <img src="/images/gurudwara.jpg" alt="" class="card">
+                    <img src="/images/tajmahal3.jpg" alt="" class="card">
+                    <img src="/images/jama-masjid-agra.jpg" alt="" class="card">
+                    <img src="/images/beauty-of-agra-fort.jpg" alt="" class="card">
+                </div>
+            </div>
+        </div>
+
+        
+
+    </header>
+    <script>
+        const logo = document.getElementById("logo");
+        const menu = document.getElementById("menu");
+        let rotationAngle = 0;
+
+        logo.addEventListener('click', () => {
+            rotationAngle -= 360;
+            logo.style.transform = rotate($,{rotationAngle},deg);
+        });
+    </script>
 </body>
 </html>
