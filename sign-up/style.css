@@ -1,0 +1,98 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+    font-family: Arial, sans-serif;
+    background-image: url('/images/tajmahal.jpg'); /* Replace with your image URL */
+    background-size: cover;
+    background-position: center;
+    backdrop-filter: blur(8px);
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.signup-form {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 15px;
+    padding: 20px; /* Adjusted padding for a shorter form */
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    width: 400px; /* Wider form */
+    text-align: center;
+}
+
+.signup-form h2 {
+    margin-bottom: 15px; /* Reduced margin for the heading */
+    color: #fff;
+}
+
+.signup-form form {
+    display: flex;
+    flex-direction: column; /* Stack inputs vertically */
+    align-items: center; /* Center align items */
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="password"],
+.signup-form input[type="text"].otp {
+    width: 100%;
+    padding: 10px; /* Padding for input fields */
+    margin: 8px 0; /* Margin for input fields */
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    text-align: center; /* Center text in input fields */
+}
+
+.signup-form button {
+    background-color: #4CAF50; /* Green background */
+    color: white; /* White text */
+    padding: 10px; /* Padding for buttons */
+    border: none; /* No border */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width */
+    font-size: 16px; /* Larger font size */
+    transition: background-color 0.3s, transform 0.2s; /* Smooth transition for hover effects */
+    margin: 8px 0; /* Margin for spacing */
+}
+
+.signup-form button:hover {
+    background-color: #45a049; /* Darker green on hover */
+    transform: scale(1.05); /* Slightly enlarge the button on hover */
+}
+
+.signup-form button:active {
+    background-color: #388E3C; /* Even darker green when button is pressed */
+}
+
+.otp-section {
+    margin: 10px 0; /* Add margin for spacing */
+    color: #fff; /* White text for the OTP section */
+}
+
+.already-registered {
+    margin-top: 10px; /* Reduced margin for the already registered section */
+    color: #fff;
+}
+
+.already-registered a {
+    color: #4CAF50;
+    text-decoration: none;
+}
+
+.already-registered a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+    .signup-form {
+        width: 90%; /* Responsive width for smaller screens */
+    }
+}
