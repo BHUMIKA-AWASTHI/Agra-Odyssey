@@ -1,0 +1,34 @@
+*{
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+
+}
+
+.destinations h2{
+  margin-bottom: 40px;
+font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+font-size: 50px;
+}
+
+
+.destination-grid {
+  display: flex;
+  gap: 20px; 
+}
+
+.destination-item {
+  flex: 1;
+  text-align: center;
+}
+
+.destination-item img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+h2 {
+  text-align: center;
+}

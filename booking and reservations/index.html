@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Planner</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="planner-container">
+        <h1>Simple Travel Planner</h1>
+        <form id="travelPlannerForm">
+            <div class="form-group">
+                <label for="date">Travel Date:</label>
+                <input type="date" id="date" name="date" required>
+            </div>
+
+            <div class="form-group">
+                <label for="time">Travel Time:</label>
+                <input type="time" id="time" name="time" required>
+            </div>
+
+            <div class="form-group">
+                <label for="location">Location:</label>
+                <input type="text" id="location" name="location" required placeholder="Enter location">
+            </div>
+
+            <button type="button" id="addEvent">Add to Planner</button>
+        </form>
+
+        <h2>Your Planned Travels</h2>
+        <div id="calendar">
+            <!-- Travel events will be displayed here -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
